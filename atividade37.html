@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>37. Crie uma função que retorne o segundo maior número de um array.</title>
+</head>
+<body>
+
+    <script>
+
+        function segundo(array) {
+            let maior = -1;
+            let segundo = -1;
+
+            for (const num of array) {
+                if (num > maior) {
+                    segundo = maior;
+                    maior = num;
+                } else if (num > segundo && num < maior) {
+                    segundo = num;
+                }
+            }
+
+            return segundo;
+        }
+
+        const numeros = [10, 20, 30, 40, 50];
+        alert(segundo(numeros)); 
+
+</script>
+    
+</body>
+</html>

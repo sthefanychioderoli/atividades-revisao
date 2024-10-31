@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>39. Dado um array de strings, retorne o array com todas as strings em maiúsculas.</title>
+</head>
+<body>
+
+    <script>
+
+        function maiuscula(array) {
+            const resultado = [];
+            for (const str of array) {
+                resultado.push(str.toUpperCase());
+            }
+            return resultado;
+        }
+
+        const palavras = ['ola', 'mundo', 'javascript'];
+        const resultado = maiuscula(palavras);
+
+        alert(resultado);
+        
+    </script>
+
+</body>
+</html>

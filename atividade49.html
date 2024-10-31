@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>49. Crie uma função que verifique se uma pessoa pode dirigir (idade >= 18).</title>
+</head>
+<body>
+
+    <script>
+       
+        function idade_dirigir(idade){
+            if(idade >= 18){
+                console.log("Você está apto à dirigir!")
+            }
+            else{
+                console.log("Você não pode dirigir.")
+            }
+        }
+
+        const pessoa = {
+            nome: 'Sthefany',
+            idade: 18 ,
+            cidade: 'Birigui'
+        }
+
+        idade_dirigir(pessoa.idade)
+
+
+
+    </script>
+    
+</body>
+</html>

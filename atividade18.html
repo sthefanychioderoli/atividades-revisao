@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18. Escreva uma função que retorne o menor de três números.</title>
+</head>
+<body>
+    
+    <script>
+
+        let num1 = parseInt(prompt('Digite um número'))
+        let num2 = parseInt(prompt('Digite outro número'))
+        let num3 = parseInt(prompt('Digite mais um número'))
+
+        if(num1 > num2){
+            if(num1 > num3){
+            alert(num1 + '(primeiro número) é o maior')
+            }
+            else{
+                alert(num3 + '(terceiro número) é o maior')
+            }
+        }
+        else if(num1 < num2){
+            if(num2 > num3){
+            alert(num2 + '(segundo número) é o maior')
+            }
+            else{
+                alert(num3 + '(terceiro número) é o maior')
+            }
+        }
+        else{
+            alert('Todos os números são iguais')
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>45. Crie uma função que calcule a média de idade de uma lista de pessoas.</title>
+</head>
+<body>
+
+     <script>
+
+        const pessoas = [
+            { nome: 'Sthefany', idade: 17 },
+            { nome: 'Vitória', idade: 19 },
+            { nome: 'Davi', idade: 7 },
+            { nome: 'Eduarda', idade: 28},
+            { nome: 'João Pedro', idade: 6}
+];
+
+function calcular_media_idade(lista_pessoas) {
+    let soma_idades = 0;
+
+    for (let i = 0; i < lista_pessoas.length; i++) {
+        soma_idades += lista_pessoas[i].idade;
+    }
+
+    const media = soma_idades / lista_pessoas.length;
+    return media;
+}
+
+const media_idade = calcular_media_idade(pessoas);
+console.log('A média de idade é: ' + media_idade);
+
+
+     </script>
+
+</body>
+</html>

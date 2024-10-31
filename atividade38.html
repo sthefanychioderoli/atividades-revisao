@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>38. Concatene todos os elementos de um array em uma única string.</title>
+</head>
+<body>
+
+    <script>
+
+        function concatenar(array) {
+            let resultado = '';
+            for (const elemento of array) {
+                resultado += elemento;
+            }
+            return resultado;
+        }
+
+        const palavras = ['Olá', ' ', 'mundo', '!'];
+        const resultado = concatenar(palavras);
+
+        alert(resultado);
+
+</script>
+    
+</body>
+</html>

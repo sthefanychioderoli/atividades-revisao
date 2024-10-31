@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>29. Verifique se um número é primo.</title>
+</head>
+<body>
+
+    <script>
+            
+        var num = prompt ("Digite um número: ")
+        var primo = true
+        for (i = 2; i < num; i++) {
+            if (num % i == 0){ 
+                primo = false
+                alert (num + ' Não é primo')
+            }
+        }
+        if (primo){
+            alert (num + ' É primo')
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20. Verifique se um número está dentro de um intervalo (por exemplo, entre 10 e 20).</title>
+</head>
+<body>
+
+    <script>
+
+        let intervalo1 = parseInt(prompt("Digite o primeiro número do intervalo:"));
+        let intervalo2 = parseInt(prompt("Digite o segundo número do intervalo:"));
+        let numero = parseInt(prompt("Digite um número:"));
+
+        if (numero >= intervalo1 && numero <= intervalo2) {
+            alert("O número está dentro do intervalo de " + intervalo1 + " e " + intervalo2);
+        } else {
+            alert("O número está fora do intervalo de " + intervalo1 + " e " + intervalo2);
+        }
+
+    </script>
+    
+</body>
+</html>

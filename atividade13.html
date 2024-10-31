@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13. Verifique se uma letra é uma vogal ou uma consoante.</title>
+</head>
+<body>
+
+    <script>
+
+        let letra = prompt('Digite uma letra')
+        let letrafinal = letra.toUpperCase()
+        let vogais = ['A', 'E', 'I', 'O', 'U']
+        let consoante = true
+
+        for(i in vogais){
+            if(vogais[i] == letrafinal){
+                alert(letra + ' é uma vogal')
+                consoante = false
+                break
+            }
+        }
+        if(consoante){
+            alert(letra + ' é uma consoante')
+        }
+
+    </script>
+    
+</body>
+</html>

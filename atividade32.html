@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32. Verifique se um elemento está presente em um array.</title>
+</head>
+<body>
+    <script>
+
+        var numeros = [10, 20, 30, 40, 50];
+        var verificar = 30;
+        var nao = 0
+
+        for (let num of numeros) {
+            if (num === verificar) {
+                alert("O numero esta presente no array.");
+            } else {
+                nao = 1
+            }
+        }
+
+        if (nao === 1) {
+            alert("O numero não esta presente no array.")
+        }
+
+    </script>
+</body>
+</html>
